@@ -1,10 +1,10 @@
-const searchInput = document.querySelector("#searchInput")
-searchButton = document.querySelector("#searchButton")
-weatherIcon = document.querySelector("#weatherIcon")
-windSpeed = document.querySelector("#windSpeed")
-humidity = document.querySelector(".humidity")
-weather = document.querySelector(".weather")
-description = document.querySelector(".description")
+const searchInput = document.querySelector("#searchInput");
+searchButton = document.querySelector("#searchButton");
+weatherIcon = document.querySelector("#weatherIcon");
+windSpeed = document.querySelector("#windSpeed");
+humidity = document.querySelector(".humidity");
+weather = document.querySelector(".weather");
+description = document.querySelector(".description");
 API = "ccd03ace6e4452197c1cbef3e0ff44af";
 
 const setWeatherDetails = (data) => {
@@ -32,7 +32,7 @@ const setWeatherDetails = (data) => {
             weatherIcon.src = "assets/images/haze.png";
             break;
     }
-}
+};
 
 // call api
 const callAPI = (id) => {
@@ -40,15 +40,15 @@ const callAPI = (id) => {
         .then(response => {
             if (!response.ok) {
                 alert("Check the spelling of your selected city and try again, or something went wrong!");
-                throw new Error(`Request failed with status ${response.status}`)
+                throw new Error(`Request failed with status ${response.status}`);
             }
-            return response.json()
+            return response.json();
         })
         .then(data => {
             setWeatherDetails(data);
         })
-        .catch(error => console.log(error))
-}
+        .catch(error => console.log(error));
+};
 
 searchButton.addEventListener("click", (e) => {
     if (searchInput.value == "") {
@@ -56,13 +56,13 @@ searchButton.addEventListener("click", (e) => {
     } else {
         callAPI(API);
     }
-})
+});
 
 searchInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
         e.preventDefault();
         searchButton.click();
     }
-})
+});
 
 searchButton.click();
