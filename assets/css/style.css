@@ -67,3 +67,22 @@ body {
     border: 1px solid #b3b3b3;
 }
 
+.searchInput button:hover {
+    color: #fff;
+    background-color: #9c9dde;
+    border: 1px solid #9c9dde;
+}
+
+/* weather icon */
+
+.weatherIcon {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+}
+
+.weatherIcon img {
+    max-width: 100%;
+    width: 8rem;
+}
