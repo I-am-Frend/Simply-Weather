@@ -18,6 +18,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #9c9dde;
+    background-image: url(../images/gradient.jpg);
 }
 
 /* main container */

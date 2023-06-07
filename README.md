@@ -1,6 +1,6 @@
-# Swedish Sticky Cake
+# Simply Weather
 
-The Swedish Sticky Cake Website, is at it's core a recipie website that gives instructions on how to prepare a sticky cake for consumption.
+Simply Weather, is a mainly JS built app, with the focus of bringing you quick information about the current weather condition. 
 
 ![Responsice Mockup]()
 
@@ -8,16 +8,17 @@ The Swedish Sticky Cake Website, is at it's core a recipie website that gives in
 
 ### Existing Features
 
-- __Nav Bar__
+- __Main Weather App__
 
-  - Avaliable on all pages, does not change as not to confuse the user of the page, through this navigational bar and buttons one can easily navigate around the page without having to press the back button.
+  - Avaliable on the only HTML Page and 
 
 ![Nav Bar]()
 
 
 ### Features Left to Implement
 
-- I would have liked to make the buttons more animated and responsive, maybe add some animations.
+- I would have liked to have a list of weather forecasts underneath the main app
+- A simple header
 
 ## Testing
 
