@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- head -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +10,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
+<!-- body -->
 <body>
 
     <div class="main-container">
         <div class="searchInput">
-            <input type="text" placeholder="Search for a city" id="searchInput" value="Stockholm">
+            <input type="text" placeholder="Search for a city" id="searchInput" value="stockholm">
             <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="weather-details">
@@ -24,12 +27,21 @@
                 <div class="description"></div>
             </div>
             <div class="wind-details">
-                <div class="humidity"></div>
+                <div class="humiditybox">
+                    <img src="assets/images/thermometer.png" alt="Humidity">
+                    <div><p class="humidity"><span>Humidity</span></p></div>
+                </div>
+                <div class="wind-speed">
+                    <img src="assets/images/wind.png" alt="Wind Speed">
+                    <div><p id="windSpeed"></p><span>Wind Speed</span></div>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- scripts -->
     <script src="assets/js/scripts.js"></script>
     <script src="https://kit.fontawesome.com/de8fbb2223.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

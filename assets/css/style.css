@@ -86,3 +86,42 @@ body {
     max-width: 100%;
     width: 8rem;
 }
+
+/* city details */
+
+.city-details {
+    color: #323232;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* wind details */
+
+.wind-details {
+    display: flex;
+    font-size: 1rem;
+    color: #323232;
+}
+
+.wind-details .humiditybox {
+    display: flex;
+    font-size: 1rem;
+    color: #323232;
+}
+
+.wind-details .humiditybox img {
+    max-height: 3rem;
+    margin-right: 0.5rem;
+}
+
+.wind-details .wind-speed {
+    display: flex;
+    font-size: 1rem;
+    color: #323232;
+}
+
+.wind-details .wind-speed img {
+    max-height: 3rem;
+    margin-right: 0.5rem;
+}
